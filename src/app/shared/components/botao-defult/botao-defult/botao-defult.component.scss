@@ -1,0 +1,23 @@
+@import "../../../../css/variebles";
+
+.btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $the-color-font;
+  width: 130px;
+  height: 40px;
+  font-size: 0.938rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}

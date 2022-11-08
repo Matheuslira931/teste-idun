@@ -1,0 +1,142 @@
+@import "../../css/variebles";
+
+
+.btn-default {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $the-color-font;
+  width: 130px;
+  height: 40px;
+  font-size: 0.938rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.backgroundHalf {
+  margin: 0 0 0 auto;
+  color: $sec-color-font;
+  border: 1px solid;
+}
+
+.backgroundHalf:hover {
+  background: $main-color-btn;
+  color: $the-color-font;
+  text-decoration: none;
+}
+
+.backgroundFull {
+  background: $main-color-btn;
+  color: $the-color-font;
+}
+
+.backgroundFull:hover {
+  color: $sec-color-font;
+  background: $the-color-font;
+  border: 1px solid;
+  text-decoration: none;
+}
+
+.cards-description {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.background-banner {
+  background-image: url(/assets/imagens/background.jpg);
+  width: 100%;
+  height: 590px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  padding-top: 10%;
+
+}
+
+.content-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.position-title-banner {
+  text-align: center;
+}
+
+.title-banner {
+    font-size: 3.5rem;
+    color: $the-color-font;
+}
+
+.color-dif {
+  color: $sec-color-font;
+}
+
+.position-title-opor {
+  width: 650px;
+  max-width: 100%;
+}
+
+.title-opor {
+  font-size: 3rem;
+}
+
+.position-cards {
+  margin-top: 60px;
+}
+
+.column_oppor {
+  float: left;
+  width: 45%;
+  min-width: 48%;
+  padding: 0 10px;
+  margin: 30px 0px;
+}
+
+.row_oppor {margin: 0 -5px;}
+
+.row_oppor:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title-inside-oppor {
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-height: 35px;
+  margin: 0;
+}
+
+.descri-inside-oppor {
+  font-size: 1.025rem;
+  min-height: 96px;
+  margin: 0;
+}
+
+.position-about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.positon-img-about, .position-inside-s-3, .position-logo-center, .navbar-footer {
+  width: 50%;
+}

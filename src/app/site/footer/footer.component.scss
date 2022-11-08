@@ -1,0 +1,86 @@
+@import "../../css/variebles";
+
+.position-top-footer {
+  border-bottom: 1px solid $sec-color-font;
+}
+
+.position-top-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  color: $sec-color-font;
+}
+
+.position-nav-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.position-logo-center {
+  margin: auto;
+}
+
+.logo-center {
+  width: auto;
+  height: 80px;
+}
+
+.social-incard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.background-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: $bg-icon;
+  margin: 0 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.background-icon:hover {
+  top: -.25rem;
+  box-shadow: 0 1px 0 $sec-color-font, 0 3px 0 -1px $sec-color-font, 0 5px 0 -2px $sec-color-font, 0 7px 0 -3px $sec-color-font, 0 3px 0 1px $sec-color-font, 0 0px 0 0px $sec-color-font;
+}
+
+.icon-style {
+  color: $sec-color-font;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+
+.icon-style:hover {
+  color: $for-color-font;
+}
+
+.position-copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.copyright-sytle {
+  opacity: 0.8;
+  font-size: 0.938rem;
+}

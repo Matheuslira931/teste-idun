@@ -1,4 +1,4 @@
-@import "../../../../css/variebles";
+@import "../../../../../assets/css/variables";
 
 .btn-default {
   display: flex;
@@ -20,4 +20,16 @@
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
+}
+
+.backgroundHalf {
+  margin: 0 0 0 auto;
+  color: $sec-color-font;
+  border: 1px solid;
+}
+
+.backgroundHalf:hover {
+  background: $main-color-btn;
+  color: $the-color-font;
+  text-decoration: none;
 }

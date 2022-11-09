@@ -1,14 +1,21 @@
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard.component';
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { DashboardRoutingModule } from './dashboard-routing.module';
+import { DashboardRouting } from './dashboard-routing.module';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    DashboardComponent,
+    HomeComponent,
+    UserComponent
+  ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    RouterModule.forChild(DashboardRouting)
   ]
 })
 export class DashboardModule { }

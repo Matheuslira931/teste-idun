@@ -1,3 +1,5 @@
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { SiteModule } from './site/site.module';
@@ -16,6 +18,7 @@ import { AppComponent } from './app.component';
     DashboardModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     RouterModule.forRoot(AppRoutingModule)
   ],
   providers: [],

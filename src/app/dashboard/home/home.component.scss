@@ -1,0 +1,39 @@
+@import "../../../assets/css/variables";
+
+
+.title-home-dash {
+  font-size: 2.25rem;
+}
+
+.position-information-count {
+  margin-top: 80px;
+}
+
+.positon-btn-another {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -70px;
+}
+
+.term-modal {
+  color: $the-color-font;
+  font-size: 1.5rem;
+}
+
+.card-termo {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.color-dif {
+  color: $sec-color-font;
+}
+
+.btn-send-send {
+  background: $the-color-font;
+  margin: 0 0 0 auto;
+  color: $sec-color-font;
+}
+

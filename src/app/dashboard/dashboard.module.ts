@@ -1,3 +1,6 @@
+import { IconModule } from './../shared/components/icons/icon.module';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ButtonsModule } from './../shared/components/buttons/buttons.module';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -15,7 +18,11 @@ import { UserComponent } from './user/user.component';
   ],
   imports: [
     CommonModule,
+    ButtonsModule,
+    IconModule,
     RouterModule.forChild(DashboardRouting)
   ]
 })
-export class DashboardModule { }
+export class DashboardModule {
+
+}

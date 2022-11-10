@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ButtonBackgroundComponent implements OnInit {
 
   @Input() content:any;
+  @Input() iconType:any;
+  @Input() iconName:any;
 
   constructor() { }
 

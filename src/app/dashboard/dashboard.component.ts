@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-var $: any;
+// var $: any;
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -11,7 +11,10 @@ export class DashboardComponent implements OnInit {
 
   public email: any;
   public password: any;
-  public user: any;
+  public user:any = {
+    'name' : 'jr'
+  };
+
 
   constructor() { }
 
@@ -20,11 +23,11 @@ export class DashboardComponent implements OnInit {
       this.user = localStorage.getItem('loggedUser');
       this.user = JSON.parse(this.user);
     }
-    $(document).ready(function () {
-        $('.nav_btn').click(function () {
-            $('.mobile_nav_items').toggleClass('active');
-        });
-    });
+    // $(document).ready(function () {
+    //     $('.nav_btn').click(function () {
+    //         $('.mobile_nav_items').toggleClass('active');
+    //     });
+    // });
   }
 
 }

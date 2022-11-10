@@ -1,3 +1,4 @@
+import { IconModule } from './../shared/components/icons/icon.module';
 import { ButtonsModule } from './../shared/components/buttons/buttons.module';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import {DynamicDialogModule} from 'primeng/dynamicdialog';
@@ -28,7 +29,7 @@ import { faGithub, faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-
     CommonModule,
     FormsModule,
     DynamicDialogModule,
-    FontAwesomeModule,
+    IconModule,
     ButtonsModule,
     RouterModule.forChild(SiteRouting)
   ],
@@ -36,8 +37,5 @@ import { faGithub, faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-
 })
 
 export class SiteModule {
-  constructor(library: FaIconLibrary) {
-    // Add an icon to the library for convenient access in other components
-    library.addIcons(faGithub, faFacebook, faLinkedin, faWhatsapp);
-  }
+
 }

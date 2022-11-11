@@ -6,3 +6,12 @@ body {
   margin: 0;
   font-family: $font-family;
 }
+
+body a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dialog-login {
+  background-color: $bg-icon;
+}

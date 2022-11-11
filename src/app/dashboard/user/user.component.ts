@@ -1,3 +1,4 @@
+import { Users } from './../../dates/users';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

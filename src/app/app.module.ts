@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +21,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    FormsModule,
     RouterModule.forRoot(AppRoutingModule)
   ],
   providers: [],

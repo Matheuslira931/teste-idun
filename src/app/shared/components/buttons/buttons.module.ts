@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { ButtonBackgroundComponent } from './button-background/button-background.component';
 import { ButtonWithoutBackgroundComponent } from './button-without-background/button-without-background.component';
 import { IconModule } from '../icons/icon.module';
+import { ButtonHrefBackgroundComponent } from './button-href-background/button-href-background.component';
 
 
 @NgModule({
   declarations: [
     ButtonBackgroundComponent,
-    ButtonWithoutBackgroundComponent
+    ButtonWithoutBackgroundComponent,
+    ButtonHrefBackgroundComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { IconModule } from '../icons/icon.module';
   ],
   exports: [
     ButtonBackgroundComponent,
-    ButtonWithoutBackgroundComponent
+    ButtonWithoutBackgroundComponent,
+    ButtonHrefBackgroundComponent
   ]
 })
 export class ButtonsModule { }

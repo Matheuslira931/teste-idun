@@ -6,7 +6,7 @@ export const AppRoutingModule: Routes = [
     loadChildren: () => import('./site/site.module').then(m => m.SiteModule)
   },
   {
-    path: 'dashboard',
+    path: 'home',
     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
   },
 

@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-button-background',
-  templateUrl: './button-background.component.html',
-  styleUrls: ['./button-background.component.scss']
+  selector: 'app-button-href-background',
+  templateUrl: './button-href-background.component.html',
+  styleUrls: ['./button-href-background.component.scss']
 })
-export class ButtonBackgroundComponent implements OnInit {
+export class ButtonHrefBackgroundComponent implements OnInit {
 
   @Input() content:any;
   @Input() iconType:any;

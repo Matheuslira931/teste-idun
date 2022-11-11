@@ -1,0 +1,34 @@
+<div id="mnsAguardCont" *ngIf="message">
+  <small class="alert d-block alert-danger" id="msnAlertContentCont">
+      {{ message }}
+  </small>
+</div>
+<div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding internalInput">
+  <div class="content-input">
+    <label class="label-form-contact" for="name">Nome</label>
+    <div class="input-container">
+        <i class="fas fa-envelope icon-defaultModal"></i>
+        <input type="name" [(ngModel)]="name" class="form-control input-contact" name="name" id="name" placeholder="Digite seu Nome" required>
+    </div>
+  </div>
+</div>
+<div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding internalInput">
+  <div class="content-input">
+    <label class="label-form-contact" for="email">E-mail</label>
+    <div class="input-container">
+        <i class="fas fa-envelope icon-defaultModal"></i>
+        <input type="email" [(ngModel)]="email" class="form-control input-contact" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
+    </div>
+  </div>
+</div>
+<div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding internalInput" >
+  <div class="content-input">
+    <label class="label-form-contact" for="password">Senha</label>
+    <div class="input-container">
+        <i class="fas fa-key icon-defaultModal"></i>
+        <input type="password" [(ngModel)]="password" class="form-control input-contact" name="password" id="password" placeholder="Digite uma senha" required>
+    </div>
+  </div>
+</div>
+<div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding internalInput">
+<app-button-background editStyle="backgroundFull btn-send-submit" (click)="creatUser()" content="Criar usuário"></app-button-background>

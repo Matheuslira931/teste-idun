@@ -12,6 +12,7 @@ import { SiteRouting } from './site-routing.module';
 import { SiteComponent } from './site.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { ModalSignComponent } from './header/modal-sign/modal-sign.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    ModalLoginComponent
+    ModalLoginComponent,
+    ModalSignComponent
   ],
   imports: [
     CommonModule,

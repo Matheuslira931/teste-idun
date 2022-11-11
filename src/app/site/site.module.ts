@@ -1,3 +1,4 @@
+import { InputModule } from './../shared/components/input/input.module';
 import { ModalLoginComponent } from './header/modal-login/modal-login.component';
 import { IconModule } from './../shared/components/icons/icon.module';
 import { ButtonsModule } from './../shared/components/buttons/buttons.module';
@@ -28,6 +29,7 @@ import { ModalSignComponent } from './header/modal-sign/modal-sign.component';
     DynamicDialogModule,
     IconModule,
     ButtonsModule,
+    InputModule,
     FormsModule,
     RouterModule.forChild(SiteRouting)
   ]

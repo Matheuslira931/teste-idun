@@ -13,11 +13,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputDefaultComponent } from './shared/components/input/input-default/input-default.component';
 @NgModule({
   declarations: [
-    AppComponent,
-    InputDefaultComponent
+    AppComponent
   ],
   imports: [
     SiteModule,

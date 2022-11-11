@@ -12,6 +12,17 @@ body a {
   text-decoration: none;
 }
 
+.label-form-contact {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+
+}
+
 .dialog-login, .dialog-addUser, .dialog-editUser, .dialog-deleteUser, .dialog-sign {
   background-color: $bg-icon;
   width: 625px;

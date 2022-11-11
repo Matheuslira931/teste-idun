@@ -11,6 +11,7 @@ export class ButtonHrefBackgroundComponent implements OnInit {
   @Input() iconType:any;
   @Input() iconName:any;
   @Input() hRef:any;
+  @Input() classColor:any;
 
   constructor() { }
 

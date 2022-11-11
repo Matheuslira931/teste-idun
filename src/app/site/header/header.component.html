@@ -1,23 +1,15 @@
-<div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding">
-  <div class="ui-g-8 ui-sm-6 ui-md-8 ui-lg-8">
+<div class="position-header">
+  <div class="left-area">
     <a href="/"><img class="logo_navbar" src="/assets/imagens/logo-indian.jpg" /></a>
   </div>
-  <div class=" ui-g-4 ui-sm-6 ui-md-4 ui-lg-4">
-    <div class="ui-g-6 ui-sm-6 ui-md-6 ui-lg-6">
-      <div class="alination" *ngIf="!user">
-        <button type="button" class="btn-default backgroundHalf space-btn" (click)="show()">Logar</button>
-      </div>
+  <div class="right-area">
+    <div class="alination" *ngIf="!user">
+      <app-button-background editStyle="backgroundHalf space-btn" (click)="modalLogin()" content="logar"></app-button-background>
+      <app-button-background editStyle="backgroundFull" (click)="modalSign()" content="Registrar"></app-button-background>
     </div>
-    <div class="ui-g-6 ui-sm-6 ui-md-6 ui-lg-6">
-      <button type="button" class="btn-default backgroundFull" data-bs-toggle="modal" data-bs-target="#modalRegistrar">Registrar</button>
-      <div class="alination" *ngIf="user">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link nameUser" href="home">{{user.name}}</a>
-          </li>
-        </ul>
-        <button class="btn-default backgroundFull btn-back" (click)="logout()"><i class="space-btn fas fa-chevron-left"></i>Sair</button>
-      </div>
+    <div class="alination" *ngIf="user">
+      <a class="nav-link nameUser" href="home">{{user.name}}</a>
+      <app-button-background editStyle="backgroundFull btn-back" (click)="logout()" content="Logout"></app-button-background>
     </div>
   </div>
 </div>

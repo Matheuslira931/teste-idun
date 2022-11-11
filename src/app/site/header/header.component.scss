@@ -4,6 +4,20 @@ nav {
   z-index: 1;
 }
 
+.position-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.alination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .logo_navbar {
   width: auto;
   height: 80px;
@@ -20,65 +34,6 @@ nav {
 
 .space-btn {
   margin-right: 15px;
-}
-
-.btn-default {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $the-color-font;
-  width: 130px;
-  height: 40px;
-  font-size: 0.938rem;
-  font-weight: 400;
-  border: none;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-}
-
-.btn-back {
-    width: 85px;
-}
-
-.btn-dashboard {
-  font-weight: bold;
-}
-
-.backgroundHalf {
-  margin: 0 0 0 auto;
-  color: $sec-color-font;
-  border: 1px solid;
-}
-
-.backgroundHalf:hover {
-  background: $main-color-btn;
-  color: $the-color-font;
-  text-decoration: none;
-}
-
-.backgroundFull {
-  background: $main-color-btn;
-  color: $the-color-font;
-}
-
-.backgroundFull:hover {
-  color: $sec-color-font;
-  background: $the-color-font;
-  border: 1px solid;
-  text-decoration: none;
-}
-
-.background-modal {
-  background: $main-color-btn;
-  padding: 50px 0px;
 }
 
 .clone-space {
@@ -185,5 +140,6 @@ nav {
 .alination {
   align-items: center;
 }
+
 
 

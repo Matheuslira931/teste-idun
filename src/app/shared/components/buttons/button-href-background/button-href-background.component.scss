@@ -34,6 +34,18 @@
   text-decoration: none;
 }
 
+.backgroundHalf {
+  margin: 0 0 0 auto;
+  color: $sec-color-font;
+  border: 1px solid;
+}
+
+.backgroundHalf:hover {
+  background: $main-color-btn;
+  color: $the-color-font;
+  text-decoration: none;
+}
+
 .space-btn {
   margin-right: 15px;
 }

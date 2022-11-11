@@ -10,7 +10,7 @@
             </div>
             <div class="right_area">
                 <p class="name-user">{{user.name}}</p>
-                <app-button-href-background class="btn-back" hRef="" content="Voltar" iconType="fas" iconName="arrow-left"></app-button-href-background>
+                <app-button-background editStyle="backgroundFull btn-back" (click)="logout()" iconType="fas" iconName="arrow-left" content="Logout"></app-button-background>
             </div>
         </div>
     </header>
@@ -25,7 +25,7 @@
       <div class="mobile_nav_items">
           <a href="home"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
           <a href="user"><i class="fas fa-search"></i><span>Usuario</span></a>
-          <a data-bs-toggle="modal" data-bs-target="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
+          <a href=""><i class="fas fa-check-circle"></i><span>Volta para site</span></a>
       </div>
   </div>
   <!--/MOBILE-->
@@ -34,7 +34,7 @@
   <div class="sidebar">
       <a href="home"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
       <a href="user"><i class="fas fa-search"></i><span>Usuario</span></a>
-      <a data-bs-toggle="modal" class="last-linkNav" href="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
+      <a href="" class="last-linkNav"><i class="fas fa-check-circle"></i><span>Volta para site</span></a>
   </div>
   <!--/SIDEBAR-->
 

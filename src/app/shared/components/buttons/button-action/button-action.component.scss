@@ -1,11 +1,11 @@
 @import "../../../../../assets/css/variables";
 
-.btn-default {
+.btn-default-action {
   display: flex;
   justify-content: center;
   align-items: center;
   background: $the-color-font;
-  width: 130px;
+  width: 50px;
   height: 40px;
   font-size: 0.938rem;
   font-weight: 400;
@@ -22,18 +22,32 @@
   -o-transition: 0.5s all;
 }
 
-.backgroundHalf {
-  margin: 0 0 0 auto;
-  color: $sec-color-font;
-  border: 1px solid;
+.backgroundFullEdit {
+  background: $btn-action-edit;
+  color: $the-color-font;
 }
 
-.backgroundHalf:hover {
-  background: $main-color-btn;
-  color: $the-color-font;
+.backgroundFullEdit:hover {
+  color: $btn-action-edit;
+  border-color: $btn-action-edit;
+  background: $the-color-font;
+  border: 1px solid;
   text-decoration: none;
 }
 
+.backgroundFullDelet {
+  background: $btn-action-delet;
+  color: $the-color-font;
+}
+
 .space-btn {
-  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.backgroundFullDelet:hover {
+  color: $btn-action-delet;
+  border-color: $btn-action-delet;
+  background: $the-color-font;
+  border: 1px solid;
+  text-decoration: none;
 }

@@ -11,6 +11,7 @@ export class ButtonBackgroundComponent implements OnInit {
   @Input() iconType:any;
   @Input() iconName:any;
   @Input() hRef:any;
+  @Input() editStyle:any;
 
   constructor() { }
 

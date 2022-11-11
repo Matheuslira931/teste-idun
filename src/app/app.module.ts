@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { GlobalService } from './core/services/global.service';
 import { FormsModule } from '@angular/forms';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -11,9 +13,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InputDefaultComponent } from './shared/components/input/input-default/input-default.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputDefaultComponent
   ],
   imports: [
     SiteModule,
@@ -22,9 +26,10 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     FontAwesomeModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(AppRoutingModule)
   ],
-  providers: [],
+  providers: [GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,6 +12,7 @@ body a {
   text-decoration: none;
 }
 
-.dialog-login {
+.dialog-login, .dialog-addUser, .dialog-editUser, .dialog-deleteUser, .dialog-sign {
   background-color: $bg-icon;
+  width: 625px;
 }

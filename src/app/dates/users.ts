@@ -6,9 +6,6 @@ export const Users:any = {
     name: "joão",
     email: "joao@idun.com",
     password: "teste",
-    bank: {
-      nomeBanco: 0
-    },
   },
   {
     id: 2,

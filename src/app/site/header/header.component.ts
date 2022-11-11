@@ -1,3 +1,4 @@
+import { ModalSignComponent } from './modal-sign/modal-sign.component';
 import { ModalLoginComponent } from './modal-login/modal-login.component';
 import { Users } from './../../dates/users';
 import { Component, OnInit } from '@angular/core';
@@ -24,13 +25,19 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  show() {
+  modalLogin() {
     this._ref = this.dialogService.open(ModalLoginComponent, {
       header: 'LOGIN',
-      width: '80%',
-      height: '80vh',
       closeOnEscape: false,
       styleClass: 'dialog-login',
+    });
+  }
+
+  modalSign() {
+    this._ref = this.dialogService.open(ModalSignComponent, {
+      header: 'REGISTRAR',
+      closeOnEscape: false,
+      styleClass: 'dialog-sign',
     });
   }
 

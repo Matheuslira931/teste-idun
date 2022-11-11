@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 // var $: any;
@@ -16,7 +17,7 @@ export class DashboardComponent implements OnInit {
   };
 
 
-  constructor() { }
+  constructor(public router : Router) { }
 
   ngOnInit(): void {
     if(localStorage.getItem('loggedUser')){
@@ -28,6 +29,11 @@ export class DashboardComponent implements OnInit {
     //         $('.mobile_nav_items').toggleClass('active');
     //     });
     // });
+  }
+
+  public logout() {
+    localStorage.clear();
+    this.router.navigate(['']);
   }
 
 }

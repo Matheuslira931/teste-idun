@@ -35,5 +35,25 @@
 }
 
 .space-btn {
-  margin-right: 15px;
+  margin-right: 15px !important;
+}
+
+.btn-send-submit {
+  margin: auto;
+}
+
+.backgroundHalf {
+  margin: 0 0 0 auto;
+  color: $sec-color-font;
+  border: 1px solid;
+}
+
+.backgroundHalf:hover {
+  background: $main-color-btn;
+  color: $the-color-font;
+  text-decoration: none;
+}
+
+.btn-back {
+  width: 85px;
 }

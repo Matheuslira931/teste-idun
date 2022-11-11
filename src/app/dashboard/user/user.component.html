@@ -1,28 +1,29 @@
 <div class="position-button-tamplate">
-  <app-button-background content="Adicionar usuário" iconType="fas" iconName="plus"></app-button-background>
+  <app-button-background editStyle="backgroundFull" (click)="showModalUserAdd()" content="Adicionar usuário" iconType="fas" iconName="plus"></app-button-background>
 </div>
-<!--
-<div *ngIf="users">
-  <p-table [value]="users" responsiveLayout="scroll">
+
+<div *ngIf="users && users.length > 0">
+  <p-table [value]="users">
     <ng-template pTemplate="header">
         <tr>
-            <th>Code</th>
+            <th>id</th>
             <th>Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
+            <th>email</th>
+            <th>opções</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-users>
         <tr>
-            <td>{{users.code}}</td>
+            <td>{{users.id}}</td>
             <td>{{users.name}}</td>
-            <td>{{users.category}}</td>
-            <td>{{users.quantity}}</td>
+            <td>{{users.email}}</td>
+            <td class="multiOption"><app-button-action (click)="showModalUserEdit(users)" classColor="backgroundFullEdit" iconType="fas" iconName="user"></app-button-action><app-button-action (click)="showModalUserDelete(users)" classColor="backgroundFullDelet space-btn" iconType="fas" iconName="trash"></app-button-action></td>
         </tr>
     </ng-template>
   </p-table>
+
 </div>
 
-<div *ngIf="!users">
+<div *ngIf="!users || users.length == 0">
   <h2>AINDA NAO POSSUI USUÁRIO CRIADOS!</h2>
-</div> -->
+</div>

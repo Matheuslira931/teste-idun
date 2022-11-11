@@ -24,11 +24,6 @@ export class DashboardComponent implements OnInit {
       this.user = localStorage.getItem('loggedUser');
       this.user = JSON.parse(this.user);
     }
-    // $(document).ready(function () {
-    //     $('.nav_btn').click(function () {
-    //         $('.mobile_nav_items').toggleClass('active');
-    //     });
-    // });
   }
 
   public logout() {
